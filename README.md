@@ -79,11 +79,4 @@ ng test
 
 ### Video Demonstration
 
-A short video demonstrating the solution is included in the repository. Watch it to see the application in action.
-
-### Notes
-- The project avoids using AI tools like ChatGPT for code generation.
-
-- Code is cleaned up and optimized for readability and performance.
-
-- The task was completed within the 2-day timeframe.
+A short [video](https://drive.google.com/file/d/1ET1HxNGr2t-8J7NVFE00itdPqaThEJCg/view?usp=sharing) demonstrating the solution is included in the repository. Watch it to see the application in action.
