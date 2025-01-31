@@ -3,6 +3,13 @@
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.1.
 This repository contains an Angular project that implements a typeahead search feature with search optimizations, virtual scrolling, and state management using NgRx. The project fetches data from a public API and provides a seamless user experience with efficient rendering and query management.
 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/~/github.com/armenmkrtchian/task-book-search)
+
+
+## Video Demonstration
+
+A short [video](https://drive.google.com/file/d/1ET1HxNGr2t-8J7NVFE00itdPqaThEJCg/view?usp=sharing) demonstrating the solution is included in the repository. Watch it to see the application in action.
+
 ## Features
 
 **Typeahead Search:** Implements a search bar with debounce and switchMap to optimize API calls.
@@ -54,31 +61,3 @@ To execute unit tests with the [Karma](https://karma-runner.github.io) test runn
 ```bash
 ng test
 ```
-
-## Key Implementation Details
-
-### Typeahead Search
-**Debounce**: Reduces the number of API calls by waiting for a pause in typing.
-
-**switchMap**: Cancels previous API calls if a new query is entered.
-
-### Virtual Scrolling
-**Angular CDK Virtual Scroller:** Efficiently renders only the visible items in the list, improving performance for large datasets.
-
-### NgRx Store
-**Actions**: Define actions for saving queries and fetching results.
-
-**Effects**: Handle side effects like API calls.
-
-**Reducers**: Manage state changes based on actions.
-
-**Selectors**: Retrieve data from the store efficiently.
-
-### Services and Interceptors
-**SearchService**: Handles API calls.
-
-### Video Demonstration
-
-A short [video](https://drive.google.com/file/d/1ET1HxNGr2t-8J7NVFE00itdPqaThEJCg/view?usp=sharing) demonstrating the solution is included in the repository. Watch it to see the application in action.
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/~/github.com/armenmkrtchian/task-book-search)
-
