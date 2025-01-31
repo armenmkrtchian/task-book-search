@@ -80,3 +80,5 @@ ng test
 ### Video Demonstration
 
 A short [video](https://drive.google.com/file/d/1ET1HxNGr2t-8J7NVFE00itdPqaThEJCg/view?usp=sharing) demonstrating the solution is included in the repository. Watch it to see the application in action.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/~/github.com/armenmkrtchian/task-book-search)
+
