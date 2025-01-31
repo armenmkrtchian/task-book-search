@@ -1,0 +1,46 @@
+.book-items-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .books-viewport {
+    height: 500px;
+    width: 100%;
+    max-width: 50%;
+  }
+
+  .book-item {
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px dashed #ccc;
+
+    .book-item-title,
+    .book-item-publish-year {
+      margin-bottom: 10px;
+    }
+
+    .book-item-title,
+    .book-item-author-name,
+    .book-item-publish-year {
+      word-break: break-all;
+      margin: 0 0 8px;
+      max-width: 95%;
+    }
+  }
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 20px;
+}

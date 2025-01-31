@@ -1,0 +1,18 @@
+<form>
+  <mat-form-field appearance="fill">
+    <input
+      type="text"
+      matInput
+      [formControl]="searchControl"
+      [matAutocomplete]="auto"
+      placeholder="Search books..."
+    />
+    <mat-autocomplete #auto="matAutocomplete" >
+      @for (query of matchingQueries$ | async; track $index) {
+      <mat-option [value]="query">
+        {{ query }}
+      </mat-option>
+      }
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

@@ -1,0 +1,32 @@
+<ng-container>
+    @if (!(loading$ | async)) {
+      @if ((books$ | async)?.length === 0) {
+        <div class="no-results">
+          No books found.
+        </div>
+      } @else {
+        <div class="book-items-wrapper">
+          <cdk-virtual-scroll-viewport itemSize="20" class="books-viewport">
+            @for (book of books$ | async; track book.key) {
+              <div class="book-item">
+                <strong>Title: </strong>
+                <p class="book-item-title">{{ book.title }}</p>
+                <strong>Author(s):</strong>
+                <p class="book-item-author-name">
+                  @for (author of book.author_name; track $index; let last = $last) {
+                    {{ author }}{{ last ? '.' : ',' }}
+                  }
+                </p>
+                <strong>First Published: </strong>
+                <p class="book-item-publish-year">{{ book.first_publish_year }}</p>
+              </div>
+            }
+          </cdk-virtual-scroll-viewport>
+        </div>
+      }
+    } @else {
+      <div class="loading-spinner">
+        <mat-spinner diameter="50"></mat-spinner>
+      </div>
+    }
+  </ng-container>
